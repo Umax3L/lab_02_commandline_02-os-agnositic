@@ -18,7 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+hello
 
 
 ==========
@@ -28,7 +28,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
+hello there
 
 
 ==========
@@ -38,15 +38,14 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
-
+>
 
 ==========
 4. Uh-oh... we're stuck!
 
 Type [CTRL + C] to get your prompt back.
 ----------
-
+^C
 
 
 ==========
@@ -56,7 +55,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+good mornin'
 
 
 ==========
@@ -66,7 +65,8 @@ $ echo *
 
 What happens?
 ----------
-
+3D Objects AppData Application Data Contacts Cookies Creative Cloud Files D Desktop Documents doesnotexist Downloads Dropbox Favorites get-pip.py Links Local Settings media-computation MicrosoftEdgeBackups mnt mtec1003 Music My Documents NetHood NTUSER.DAT ntuser.dat.LOG1 ntuser.dat.LOG2 NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms NTUSER.DAT{5f23a0cb-f7f2-11eb-9390-b0fc36a771c4}.TM.blf NTUSER.DAT{5f23a0cb-f7f2-11eb-9390-b0fc36a771c4}.TMContainer00000000000000000001.regtrans-ms NTUSER.DAT{5f23a0cb-f7f2-11eb-9390-b0fc36a771c4}.TMContainer00000000000000000002.regtrans-ms ntuser.ini OneDrive Pictures PrintHood Recent Saved 
+Games Searches SendTo Start Menu Sti_Trace.log Templates Videos
 
 
 ==========
@@ -74,7 +74,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+clear
 
 
 ==========
@@ -87,7 +87,12 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 ==========
@@ -97,7 +102,8 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE>
 
 
 ==========
@@ -105,7 +111,10 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
-
+curl -o google.html www.google.com
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14738    0 14738    0     0  81237      0 --:--:-- --:--:-- --:--:-- 83265
 
 
 ==========
@@ -113,7 +122,10 @@ Write the command you used below.  Also copy and paste the output below.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
-
+curl -o lab.txt http://github.com/entertainmenttechnology/lab_02_commandline_02
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 
 ==========
@@ -121,7 +133,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-
+cd
 
 
 ==========
@@ -137,7 +149,7 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
-
+curl -o mtec1003-lab-02.zip https://filebin.net/retypweqyn7h8vrg/mtec1003-lab-02.zip?t=a0ulqlss
 
 
 ==========
