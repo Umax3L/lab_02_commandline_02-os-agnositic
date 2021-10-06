@@ -13,65 +13,65 @@ Feel free to use your workstation to test your answers to the questions that don
 ==========
 1. Write the command that you would use to change to the root directory.
 ----------
-$ ls /
+$ cd
 
 
 ==========
 2. Write the command that you would use to change to your home directory.
 ----------
-$ ls ~
+$ cd ~
 
 
 ==========
 3. Write the command that you would use to change to your Desktop folder.
 ----------
-$ ls Desktop
+$ cd Desktop
 
 
 ==========
 4. What's the absolute path to your home directory?
 ----------
-$ pwd /c/Users/om7gv
+/c/Users/wilson
 
 
 ==========
 5. What's the absolute path to your Desktop directory?
 ----------
-$ pwd /c/Users/om7gv/Desktop
+/c/Users/wilson/Desktop
 
 
 ==========
 6. What's the absolute path to your Desktop directory?
 ----------
-
+/c/Users/wilson/Desktop
 
 
 ==========
 7. If you're in your home directory, what's the relative path to your Desktop directory?
 ----------
-$ cd ~/Desktop
+/wilson/Desktop
 
 ==========
 8. If you're in your home directory, how would you create a new directory on your desktop called stuff without changing your directory?  Write your command below.
 ----------
-mkdir -p om7gvs/Desktop/stuff
+mkdir -p Desktop/stuff
 
 ==========
 9. If you're in your root directory, how would you create a new directory on your desktop called more-stuff without changing your directory?  Write your command below.
 ----------
-mkdir -p Desktop/stuff/more-stuff
+mkdir -p /c/Users/wilson/Desktop/more-stuff
 
 
 ==========
 10. If you're in your Desktop directory, how would you create a new directory on your desktop called even-more-stuff?  Write your command below.
 ----------
-mkdir -p stuff/more-stuff/even-more-stuff
+mkdir -p even-more-stuff
 
 
 ==========
 11. If you're in your home directory, how would you change to the directory right above it using a relative path (it should bring you to /Users)?  Write your command below.
 ----------
-cd ..
+cd /c/Users/
 
 
 ==========
@@ -87,7 +87,7 @@ cd -
 ==========
 14. How would you show all of the files (including hidden ones) with detailed (long) information that are on you're Desktop if you're in your home directory?  Write your command below.
 ----------
-ls -l -a -t om7gv/Desktop/
+ls -tl Desktop
 ==========
 Optional Challenge:
 
