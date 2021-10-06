@@ -154,7 +154,7 @@ $ curl -o mtec1003-lab-02.zip https://filebin.net/retypweqyn7h8vrg/mtec1003-lab-
 
 Write down the command that you used to uncompress the file.
 ----------
-unzip 
+$ unzip mtec1003-lab-02.zip
 
 
 ==========
@@ -162,11 +162,12 @@ unzip
 
 Copy and paste the output below.
 ----------
-ls
-Applications	Downloads	Music		fromto		secret.tar.gz
-Desktop		Library		Pictures	isus		stuff
-Documents	Movies		Public		mtec1003-lab-02
+om7gv@LAPTOP-C6LD88H8 MINGW64 ~
+$ cd mtec1003-lab-02
 
+om7gv@LAPTOP-C6LD88H8 MINGW64 ~/mtec1003-lab-02
+$ ls
+books/  logs/  web/
 
 
 ==========
@@ -189,8 +190,10 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-cd stuff
 echo "hi" > hello.txt
+
+ls
+hello.txt
 
 ==========
 18. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -201,7 +204,7 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-cd
+cd ..
 pwd
 tar -cvf stuff.tar stuff
 a stuff
@@ -213,8 +216,13 @@ $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
+cd ..
 
+pwd
 
+tar -cvf stuff.tar stuff
+stuff/
+stuff/hello.txt
 
 ==========
 20. List the files in the directory you're currently in (which should be home).  
@@ -222,9 +230,11 @@ Copy and paste the output below.
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
 ls
-Applications	Downloads	Music		fromto		stuff.tar
-Desktop		Library		Pictures	isus
-Documents	Movies		Public		stuff
+'Saved Games'/      Searches/
+ SendTo             source/
+'Start Menu'@       stuff/
+ stuff.tar          Templates@
+ Tracing/           Videos/
 ==========
 21. Now compress it!  Type:
 
@@ -233,7 +243,9 @@ gzip stuff.tar
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
 gzip stuff.tar
+
 ls
+
 Applications	Downloads	Music		fromto		stuff.tar.gz
 Desktop		Library		Pictures	isus
 Documents	Movies		Public		stuff
@@ -250,11 +262,11 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-mv stuff.tar.gz mtec1002-lab-02
- cd mtec1002-lab-02
-mtec1003-lab-02  ls
-stuff.tar.gz
+mv stuff.tar.gz mtec1003-lab-02
+cd mtec1003-lab-02
 
+ls
+books/  logs/  stuff.tar.gz  web/
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
 
@@ -265,6 +277,7 @@ List the files.  Copy and paste the output below (the folder, stuff, should be t
 tar -xvf stuff.tar.gz
 x stuff/
 x stuff/hello.txt
+
 ls
 stuff		stuff.tar.gz
 ==========
@@ -283,9 +296,10 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
-curl -o secret.tar.gz http://filebin.net/retypweqyn7h8vrg/secret.tar.gz?t=5jze7uyg
+curl -o secret.tar.gz https://entertainmenttechnology.github.io/Viera-MTEC1003-fall-2018/secret.tar.gz
 
 
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
+1 file is in archive in addition to no names
