@@ -38,14 +38,14 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
->
+no output
 
 ==========
 4. Uh-oh... we're stuck!
 
 Type [CTRL + C] to get your prompt back.
 ----------
-^C
+
 
 
 ==========
@@ -65,8 +65,7 @@ $ echo *
 
 What happens?
 ----------
-3D Objects AppData Application Data Contacts Cookies Creative Cloud Files D Desktop Documents doesnotexist Downloads Dropbox Favorites get-pip.py Links Local Settings media-computation MicrosoftEdgeBackups mnt mtec1003 Music My Documents NetHood NTUSER.DAT ntuser.dat.LOG1 ntuser.dat.LOG2 NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms NTUSER.DAT{5f23a0cb-f7f2-11eb-9390-b0fc36a771c4}.TM.blf NTUSER.DAT{5f23a0cb-f7f2-11eb-9390-b0fc36a771c4}.TMContainer00000000000000000001.regtrans-ms NTUSER.DAT{5f23a0cb-f7f2-11eb-9390-b0fc36a771c4}.TMContainer00000000000000000002.regtrans-ms ntuser.ini OneDrive Pictures PrintHood Recent Saved 
-Games Searches SendTo Start Menu Sti_Trace.log Templates Videos
+It displays my files and folders
 
 
 ==========
@@ -102,8 +101,7 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
-<TITLE>301 Moved</TITLE>
+<title>Google</title>
 
 
 ==========
@@ -122,18 +120,15 @@ curl -o google.html www.google.com
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
-curl -o lab.txt http://github.com/entertainmenttechnology/lab_02_commandline_02
- % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100  138k    0  138k    0     0   208k      0 --:--:-- --:--:-- --:--:--  209k
-
+$ pwd
+/c/Users/om7gv
 
 ==========
 12. If you're not in your home directory, change to it (use the shortcut).
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-cd
+cd ~
 
 
 ==========
@@ -149,10 +144,10 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
-curl -o mtec1003-lab-02.zip https://filebin.net/retypweqyn7h8vrg/mtec1003-lab-02.zip?t=a0ulqlss
+$ curl -o mtec1003-lab-02.zip https://filebin.net/retypweqyn7h8vrg/mtec1003-lab-02.zip?t=a0ulqlss
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100    22  100    22    0     0     31      0 --:--:-- --:--:-- --:--:--    31
+100    22  100    22    0     0     44      0 --:--:-- --:--:-- --:--:--    45
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
