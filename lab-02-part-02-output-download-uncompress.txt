@@ -125,7 +125,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 curl -o lab.txt http://github.com/entertainmenttechnology/lab_02_commandline_02
  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  138k    0  138k    0     0   208k      0 --:--:-- --:--:-- --:--:--  209k
 
 
 ==========
@@ -150,14 +150,16 @@ Use ls to verify that it downloaded.
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
 curl -o mtec1003-lab-02.zip https://filebin.net/retypweqyn7h8vrg/mtec1003-lab-02.zip?t=a0ulqlss
-
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    22  100    22    0     0     31      0 --:--:-- --:--:-- --:--:--    31
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
 
 Write down the command that you used to uncompress the file.
 ----------
-
+unzip 
 
 
 ==========
@@ -165,6 +167,10 @@ Write down the command that you used to uncompress the file.
 
 Copy and paste the output below.
 ----------
+ls
+Applications	Downloads	Music		fromto		secret.tar.gz
+Desktop		Library		Pictures	isus		stuff
+Documents	Movies		Public		mtec1003-lab-02
 
 
 
@@ -176,8 +182,8 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
-
+mkdir stuff
+ls
 
 ==========
 17. Change into the "stuff" directory that you just created.  Run the following command (we haven't learned this exact command yet, but we will in the next lab!) exactly as described below:
@@ -188,8 +194,8 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
-
+cd stuff
+echo "hi" > hello.txt
 
 ==========
 18. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -200,9 +206,11 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
-
-
+cd
+pwd
+tar -cvf stuff.tar stuff
+a stuff
+a stuff/hello.txt
 ==========
 19. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
 
@@ -218,9 +226,10 @@ Copy and paste the output below.
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
-
-
+ls
+Applications	Downloads	Music		fromto		stuff.tar
+Desktop		Library		Pictures	isus
+Documents	Movies		Public		stuff
 ==========
 21. Now compress it!  Type:
 
@@ -228,7 +237,11 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+gzip stuff.tar
+ls
+Applications	Downloads	Music		fromto		stuff.tar.gz
+Desktop		Library		Pictures	isus
+Documents	Movies		Public		stuff
 
 
 ==========
@@ -242,7 +255,10 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+mv stuff.tar.gz mtec1002-lab-02
+ cd mtec1002-lab-02
+mtec1003-lab-02  ls
+stuff.tar.gz
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -251,14 +267,16 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
-
-
+tar -xvf stuff.tar.gz
+x stuff/
+x stuff/hello.txt
+ls
+stuff		stuff.tar.gz
 ==========
 24. Go back to your home directory
 [No output]
 ----------
-
+cd ~
 
 
 ==========
@@ -270,7 +288,7 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
-
+curl -o secret.tar.gz http://filebin.net/retypweqyn7h8vrg/secret.tar.gz?t=5jze7uyg
 
 
 ==========
